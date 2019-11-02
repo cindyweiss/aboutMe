@@ -93,25 +93,26 @@ function littleDemons() {
   var userResponse = prompt('Guess how many children we have?');
 
 
-  while (guessCounter > 0 && userResponse !== '4') {
-    if (userResponse > '4') {
+  while (guessCounter > 0) {
+    userResponse = parseInt(userResponse, 10);
+    if (userResponse > 4) {
       userResponse = prompt('You are to high!');
     }
-    else if (userResponse < '4') {
+    else if (userResponse < 4) {
       userResponse = prompt('You are to low!');
+    } else if (userResponse === 4) {
+      alert('YOU GOT IT RIGHT');
+      totalScore++;
+      console.log(totalScore, 'question 6');
+
+    } else {
+      userResponse = prompt('ENTER A NUMBER');
     }
     guessCounter--;
   }
-  if (userResponse === '4') {
-
-    totalScore++;
-    console.log(totalScore, 'question 6');
-
-  }
-
-  alert('In case you are dying to know we have 4 children!');
-
 }
+
+
 
 littleDemons();
 
