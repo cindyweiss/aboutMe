@@ -1,2 +1,38 @@
-body { background-color: lightblue;
+body { background-color:lightblue;
+}
+h1 {
+  color: darkblue;
+  text-align: center;
+  border: solid 10px;
+  margin: 25px;
+  padding: 25px;
+  
+}
+h2{
+  color:darkblue;
+  text-align: center;
+  border: solid 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.table {
+  display: table;
+  margin: 3px ;
+}
+
+ul#horizontal-list {
+min-width: 500;
+list-style: none;
+padding-top: 20px;
+}
+
+ul#horizontal-list li{
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(182, 24, 161);
+}
+
+p{
+  text-indent: 50px;
 }
